@@ -11,7 +11,7 @@ function App() {
   const [message, setMessage] = useState(" ");
   const [editContent, setEditContent] = useState("");
 
-  // --------------------------Todo olusturma
+  // --------------------------Todo oluşturma
   const handleCreateTodo = async () => {
     if (!newTodo) return; //false, null, undefined, 0, NaN, veya "" (boş string) ise fonksiyonu sonlandir
     try {
@@ -19,10 +19,10 @@ function App() {
       const response = await axios.post(`${url}/todos`, { content: newTodo });
       console.log(response.data); // Gelen veriyi konsola yazdırıyoruz
       get_todos_update();
-      setMessage(response.data.message); // Backend den gelen mesaji yazdiriyoruz
+      setMessage(response.data.message); // Backend den gelen mesajı yazdırıyoruz
       setTimeout(() => setMessage(""), 3000);
     } catch (error) {
-      const errMsg = error.response?.data?.detail || "Bir hata oluştu!"; // backenden hata mesajini aliyoruz
+      const errMsg = error.response?.data?.detail || "Bir hata oluştu!"; // backenden hata mesajını alıyoruz
       setMessage(errMsg);
       setTimeout(() => setMessage(""), 3000);
     }
@@ -58,7 +58,7 @@ function App() {
     }
   };
 
-  // --------------------------Todo Guncelleme
+  // --------------------------Todo Güncelleme
  const update_todo = async (todo_id) => {
   try {
     const res = await axios.put(`${url}/todos/${todo_id}`, { content: editContent });
@@ -71,7 +71,7 @@ function App() {
     setTimeout(() => setMessage(""), 3000);
   }
 };
-  //Baslangicta tum todolari alma
+  //Başlangıçta tüm todolari getir
   useEffect(() => {
     get_todos();
   }, []);

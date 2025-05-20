@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-/* Disabled input için stil */
+
 .input-disabled {
   background-color: #242424; 
   color: #ffffff;               
@@ -14,7 +14,7 @@
   font-size: 14px;
 }
 
-/* Active input için stil */
+
 .input-active {
   background-color: #242424;
   color: #ffffff;
@@ -24,8 +24,8 @@
 }
 
 .input-active:focus {
-  border-color: #4A90E2; /* Odaklandığında mavi sınır */
-  outline: none;         /* Odak çizgilerini kaldır */
+  border-color: #4A90E2;
+  outline: none;         
 }
 
 .todo-ekle-input{

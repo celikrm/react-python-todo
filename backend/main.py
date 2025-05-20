@@ -26,7 +26,7 @@ def get_db(): # her bir fonksiyonda veritabanı bağlantısı açılıp kapatıl
 
 @app.get("/")
 def root():
-    return {"id": "1", "todo": "content"}
+    return {"id": "1", "todo": "icerik"}
 
 @app.get("/todos")
 def get_all_todos(db = Depends(get_db)): # db = Depends(get_db) db bağlantısı açar
