@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Disabled input için stil */
+.input-disabled {
+  background-color: #242424; 
+  color: #ffffff;               
+  opacity: 1;               
+  border: 1px solid #242424;   
+  font-size: 14px;
+}
+
+/* Active input için stil */
+.input-active {
+  background-color: #242424;
+  color: #ffffff;
+  border: 1px solid #242424;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.input-active:focus {
+  border-color: #4A90E2; /* Odaklandığında mavi sınır */
+  outline: none;         /* Odak çizgilerini kaldır */
+}
+
+.todo-ekle-input{
+  background-color: #242424;
+  color: #ffffff;
+  border: 1px solid #646cff;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+}
