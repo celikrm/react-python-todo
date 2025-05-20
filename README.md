@@ -10,7 +10,7 @@ cd ..
 cd frontend  
 npm install  
 
-### Uygulamayı Çalıştırma  
+**Uygulamayı Çalıştırma**    
 cd frontend  
 npm run dev  **(http://localhost:5173/)**   
 cd ..  
